@@ -21,5 +21,13 @@ public class Aluno {
 		this.nome = nome;
 		this.email = email;
 	}
+	
+	public String getCpf() {
+		return cpf.toString();
+	}
+	
+	public String getEmail() {
+		return email.toString();
+	}
 
 }
