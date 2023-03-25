@@ -1,11 +1,11 @@
 package br.com.alura.escola.dominio.aluno;
 
 public class FabricaDeAluno {
-
+	
 	private Aluno aluno;
 
-	public FabricaDeAluno comNomeCpfEmail(String nome, String cpf, String email) {
-		this.aluno = new Aluno(new Cpf(cpf), nome, new Email(email));
+	public FabricaDeAluno comNomeCPFEmail(String nome, String cpf, String email) {
+		this.aluno = new Aluno(new CPF(cpf), nome, new Email(email));
 		return this;
 	}
 	
@@ -17,4 +17,5 @@ public class FabricaDeAluno {
 	public Aluno criar() {
 		return this.aluno;
 	}
+	
 }

@@ -1,26 +1,30 @@
 package br.com.alura.escola.dominio.aluno;
 
 public class Telefone {
+	
 	private String ddd;
 	private String numero;
 
 	public Telefone(String ddd, String numero) {
-		if (ddd == null || !ddd.matches("^(1[1-9]|[2-9]\\d)$") ) {
-			throw new IllegalArgumentException("Formato inválido de ddd!");
+		if (ddd == null || numero == null) {
+			throw new IllegalArgumentException("DDD e Numero sao obrigatorios!");
+		}
+
+		if (!ddd.matches("\\d{2}")) {
+			throw new IllegalArgumentException("DDD invalido!");
 		}
 		
-		if (numero == null || !numero.matches("[0-9]{4,5}-[0-9]{4}")) {
-			throw new IllegalArgumentException("Formato inválido de número!");
+		if (!numero.matches("\\d{8}|\\d{9}")) {
+			throw new IllegalArgumentException("Numero invalido!");
 		}
-		
 		this.ddd = ddd;
 		this.numero = numero;
 	}
-	
+
 	public String getDdd() {
 		return ddd;
 	}
-
+	
 	public String getNumero() {
 		return numero;
 	}
