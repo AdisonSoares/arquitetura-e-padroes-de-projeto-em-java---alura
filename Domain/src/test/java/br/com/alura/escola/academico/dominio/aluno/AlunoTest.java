@@ -2,6 +2,7 @@ package br.com.alura.escola.academico.dominio.aluno;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import br.com.alura.escola.shared.dominio.CPF;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +13,7 @@ class AlunoTest {
 	@BeforeEach
 	void beforeEach() {
 		this.aluno = new Aluno(
-				new CPF("123.456.789-00"), 
+				new CPF("123.456.789-00"),
 				"Fulano da Silva", 
 				new Email("fulano@email.com"));
 	}
