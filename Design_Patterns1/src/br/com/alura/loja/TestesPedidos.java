@@ -12,8 +12,7 @@ public class TestesPedidos {
 		BigDecimal valorOrcamento = new BigDecimal("300");
 		int quantidadeItens = Integer.parseInt("2");
 		
-		GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
-		GeraPedidoHandler handler = new GeraPedidoHandler(
+		GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);do linu
 				Arrays.asList(new SalvarPedidoNoBancoDeDados(),
 						new EnviarEmailPedido())); 
 		handler.executa(gerador);
