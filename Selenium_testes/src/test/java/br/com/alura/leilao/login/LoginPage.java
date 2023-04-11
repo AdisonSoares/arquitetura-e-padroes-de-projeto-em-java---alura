@@ -5,6 +5,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import br.com.alura.leilao.leiloes.LeiloesPage;
+
 public class LoginPage {
 	private static final String URL_LOGIN = "http://localhost:8080/login";
 	private WebDriver browser;
@@ -26,8 +28,9 @@ public class LoginPage {
 		
 	}
 
-	public void submeteFormulario() {
+	public LeiloesPage submeteFormulario() {
 		browser.findElement(By.id("login-form")).submit();
+		return new LeiloesPage(browser);
 		
 	}
 	
