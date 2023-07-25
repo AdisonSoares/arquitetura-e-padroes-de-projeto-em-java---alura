@@ -6,3 +6,7 @@ Oferecidos pelo grupo Alura, esse projeto é voltado para o desenvolvimento em J
 - Modelagem e padrões: Design Patterns em Java I, e Design Patterns em Java II
 - Testes: TDD, Selenium e BDD
 - Arquitetura: Clean Architecture e Domain Driven Design
+  
+ <h4 align="center"> 
+	🚧 Finalizado 🚧
+</h4>
